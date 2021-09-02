@@ -1,0 +1,17 @@
+{
+  "name": "valentinamarenda-backendcoderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ValentinaMarenda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "moment": "^2.29.1",
+    "multer": "^1.4.3"
+  }
+}

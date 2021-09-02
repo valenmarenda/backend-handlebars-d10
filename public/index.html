@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 10</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Formulario</h1>
+          <form
+            action="http://localhost:9000/api/productos/guardarform"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="form-group">
+              <label for="title">Título</label>
+              <input type="text" name="title" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="price">Precio</label>
+              <input type="text" name="price" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="thumbnail">Thumbnail</label>
+              <input type="file" name="thumbnail" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary mt-4" value="guardar">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

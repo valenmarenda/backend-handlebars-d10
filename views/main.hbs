@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h1 class="text-center">Vista de productos</h1>
+      <table class="table mt-4 text-center">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+            <th scope="col">Thumbnail</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#if productos}}
+            {{#each productos}}
+              <tr style="vertical-align: middle;">
+                <td>{{title}}</td>
+                <td>{{price}}</td>
+                <td><img
+                    src="{{thumbnail}}"
+                    alt="{{title}}"
+                    height="110"
+                  /></td>
+              </tr>
+            {{/each}}
+          {{else}}
+            <tr>
+              <td colspan="3" class="text-center">No hay productos</td>
+            </tr>
+          {{/if}}
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
